@@ -110,19 +110,35 @@ The generated file follows the standard Weka ARFF format like this:
 
 ---
 
-<div align="left">
-<table width="100%" style="background:linear-gradient(90deg,#0d1b2a,#1a3a5c);border-radius:10px;border:none;">
-<tr>
-<td style="padding:14px 20px;">
-<span style="font-size:1.1rem;font-weight:800;color:#ffffff;">🤖 ARFF<span style="color:#4da6ff;">ify</span></span>
-</td>
-<td align="right" style="padding:14px 20px;">
-<span style="color:#a0b8cc;font-size:0.78rem;">
-Designed & developed by <a href="https://www.linkedin.com/in/nabiulorko" style="color:#4da6ff;font-weight:600;">Nabiul Orko</a><br/>
-<span style="color:#6a8a9e;font-size:0.72rem;">PaDEL-Descriptor · PubChem FP · Python · Streamlit</span><br/>
-<span style="color:#4a6a7e;font-size:0.70rem;">© 2026 All Rights Reserved</span>
-</span>
-</td>
-</tr>
-</table>
+<div style="
+    width:100%;
+    background:linear-gradient(90deg,#0d1b2a,#1a3a5c);
+    border-radius:10px;
+    padding:14px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-sizing:border-box;
+">
+    <div>
+        <span style="font-size:1.15rem;font-weight:800;color:#ffffff;">
+            🤖 ARFF<span style="color:#4da6ff;">ify</span>
+        </span>
+    </div>
+
+    <div style="text-align:right;">
+        <span style="color:#a0b8cc;font-size:0.78rem;">
+            Designed & developed by
+            <a href="https://www.linkedin.com/in/nabiulorko"
+               style="color:#4da6ff;font-weight:600;text-decoration:none;">
+               Nabiul Orko
+            </a><br>
+            <span style="color:#6a8a9e;font-size:0.72rem;">
+                PaDEL-Descriptor · PubChem FP · Python · Streamlit
+            </span><br>
+            <span style="color:#4a6a7e;font-size:0.70rem;">
+                © 2026 All Rights Reserved
+            </span>
+        </span>
+    </div>
 </div>
