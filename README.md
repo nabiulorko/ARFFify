@@ -17,10 +17,10 @@ ARFFify is an open-source cheminformatics application that automates **PUBCHEM d
 ## 🔄 Workflow
 
 ```text
-Input Dataset (SMILES/CSV)
-           │
-           ▼
- Descriptor Generation
+           Input Bioactivity Data (ID, SMILES, Class)
+                      │
+                      ▼
+            Descriptor Generation
     (PaDEL-Descriptor)
            │
            ▼
