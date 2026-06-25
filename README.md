@@ -1,9 +1,8 @@
 <div align="center">
 
 <div align="center">
-  <img src="assets/logo.png" alt="ARFFify Logo" width="120" />
-  <h1><span style="color:#000000">ARFF</span><span style="color:#1a73e8">ify</span></h1>
-  <p>Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</p>
+  <img src="assets/logo.png" alt="ARFFify Logo" width="400" />
+  <p><strong>Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</strong></p>
 </div>
 
 
