@@ -1,6 +1,11 @@
 <div align="center">
 
-<h1>🤖 <span style="color:#000000">ARFF</span><span style="color:#1a73e8">ify</span></h1>
+<div align="center">
+  <img src="assets/logo.png" alt="ARFFify Logo" width="120" />
+  <h1><span style="color:#000000">ARFF</span><span style="color:#1a73e8">ify</span></h1>
+  <p>Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</p>
+</div>
+
 
 <p style="color:#666; font-size:0.95rem;">Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</p>
 
