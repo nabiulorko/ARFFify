@@ -2,7 +2,7 @@
 
 🚀 **From Molecular Descriptors to Weka-Ready Datasets in One Click**
 
-ARFFify is an open-source cheminformatics application that automates molecular descriptor generation and converts datasets into Weka-compatible ARFF files. It simplifies QSAR/QSPR workflow preparation by integrating descriptor calculation, preprocessing, and ARFF export into a single platform.
+ARFFify is an open-source cheminformatics application that automates **PUBCHEM descriptor** generation and converts datasets into **Weka-compatible ARFF files**. 
 
 ## ✨ Features
 
