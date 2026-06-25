@@ -17,10 +17,15 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main-title {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #1a73e8;
+        font-size: 2.2rem;
+        font-weight: 800;
         margin-bottom: 0.2rem;
+    }
+    .arff {
+        color: #000000;
+    }
+    .ify {
+        color: #1a73e8;
     }
     .subtitle {
         color: #666;
@@ -102,13 +107,24 @@ st.markdown("""
         color: #4a6a7e;
         margin-top: 0.1rem;
     }
+
 </style>
+
 """, unsafe_allow_html=True)
 
-# ─── Header ────────────────────────────────────────────────────────────────────
-st.markdown('<div class="main-title">🤖 ARFFify</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</div>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <div class="main-title">
+        🤖 <span class="arff">ARFF</span><span class="ify">ify</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.markdown(
+    '<div class="subtitle">Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</div>',
+    unsafe_allow_html=True
+)
 st.divider()
 
 # ─── STEP 1: Upload CSV ────────────────────────────────────────────────────────
