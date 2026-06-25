@@ -104,9 +104,7 @@ The generated file follows the standard Weka ARFF format like this:
 - Class label mapping (`1→active`, `0→inactive`) only works for binary integer labels.
 
 
+<div align="center">
+  <img src="assets/footer.png" alt="ARFFify Footer" width="100%" />
+</div>
 
-## 📜 License
-
-© 2026 **Nabiul Orko**. All Rights Reserved.
-
----
