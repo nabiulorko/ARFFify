@@ -5,9 +5,6 @@
   <p><strong>Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</strong></p>
 </div>
 
-
-<p style="color:#666; font-size:0.95rem;">Generate PubChem fingerprints via PaDEL-Descriptor and export Weka-ready ARFF files</p>
-
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![PaDEL](https://img.shields.io/badge/PaDEL--Descriptor-PubChem%20FP-1a73e8?style=flat-square)
