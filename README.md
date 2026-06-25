@@ -18,7 +18,6 @@
 
 **ARFFify** is a Streamlit web app that takes a bioactivity CSV file (containing molecule IDs, SMILES strings, and class labels), computes **PubChem fingerprints** using PaDEL-Descriptor, and packages everything into a `.arff` file ready for machine-learning workflows in **Weka**.
 
-> 💡 No command-line knowledge needed — the entire pipeline runs through a clean, step-by-step browser interface.
 
 ---
 
@@ -36,33 +35,12 @@
 
 ---
 
-## 📋 Input CSV Format
-
-Your CSV must contain exactly these three columns (case-sensitive):
-
-| Column | Type | Description |
-|--------|------|-------------|
-| `ID` | string / int | Unique molecule identifier (e.g. ChEMBL ID, compound name) |
-| `SMILES` | string | Valid SMILES string representing the molecular structure |
-| `Class` | int / string | Bioactivity label — e.g. `1`/`0` or `active`/`inactive` |
-
-**Example:**
-
-```csv
-ID,SMILES,Class
-CHEMBL1,CC(=O)Oc1ccccc1C(=O)O,1
-CHEMBL2,c1ccc2ccccc2c1,0
-CHEMBL3,CC(C)Cc1ccc(cc1)C(C)C(=O)O,1
-```
-
----
-
 ## 🚀 Installation
 
 ### Prerequisites
 
 - Python 3.8 or higher
-- Java 8+ (required by PaDEL-Descriptor)
+- Java 8+
 
 ### Install dependencies
 
@@ -95,7 +73,7 @@ The app will open in your browser at `http://localhost:8501`.
 
 ## 📄 Output ARFF Structure
 
-The generated file follows the standard Weka ARFF format:
+The generated file follows the standard Weka ARFF format like this:
 
 ```
 @relation CDK5_pubchem
@@ -124,25 +102,15 @@ The generated file follows the standard Weka ARFF format:
 - The `@relation` name must not contain spaces (use underscores instead).
 - Class label mapping (`1→active`, `0→inactive`) only works for binary integer labels.
 
----
 
-## 🛠️ Tech Stack
-
-- **Streamlit** — web interface
-- **pandas** — CSV loading & data manipulation
-- **padelpy** — Python wrapper for PaDEL-Descriptor
-- **PaDEL-Descriptor** — molecular fingerprint computation (Java)
-- **PubChem Fingerprints** — 881-bit binary fingerprint schema
-
----
 
 ## 📜 License
 
-© 2026 Nabiul Orko. All Rights Reserved.
+© 2026 **Nabiul Orko**. All Rights Reserved.
 
 ---
 
-<div align="center">
+<div align="left">
 <table width="100%" style="background:linear-gradient(90deg,#0d1b2a,#1a3a5c);border-radius:10px;border:none;">
 <tr>
 <td style="padding:14px 20px;">
