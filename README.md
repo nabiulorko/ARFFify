@@ -7,7 +7,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![PaDEL](https://img.shields.io/badge/PaDEL--Descriptor-PubChem%20FP-1a73e8?style=flat-square)
 ![Weka](https://img.shields.io/badge/Weka-ARFF%20Ready-2e7d32?style=flat-square)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-0d1b2a?style=flat-square)
 
@@ -17,7 +16,7 @@
 
 ## 📖 Overview
 
-**ARFFify** is a Streamlit web app that takes a bioactivity CSV file (containing molecule IDs, SMILES strings, and class labels), computes **PubChem fingerprints** using PaDEL-Descriptor, and packages everything into a `.arff` file ready for machine-learning workflows in **Weka**.
+**ARFFify** is a Streamlit based tool to convert CSV file to `.arff` file ready for machine-learning workflows in **Weka**.
 
 
 ---
@@ -46,7 +45,7 @@
 ### Install dependencies
 
 ```bash
-pip install streamlit pandas padelpy
+pip install streamlit pandas 
 ```
 
 ### Run the app
@@ -59,18 +58,7 @@ The app will open in your browser at `http://localhost:8501`.
 
 ---
 
-## 🔧 PaDEL-Descriptor Options
 
-| Option | Default | Description |
-|--------|---------|-------------|
-| Remove salt | ✅ On | Strips salt fragments from multi-component structures |
-| Detect aromaticity | ✅ On | Assigns aromaticity before descriptor calculation |
-| Standardize tautomers | ✅ On | Converts structures to a canonical tautomeric form |
-| Standardize nitro groups | ✅ On | Normalises nitro group representation |
-| Standardize molecules | ✅ On | General molecular standardization pass |
-| SMIRKS tautomers file | None | Optional custom tautomer rules (`.txt` / `.tsv` / `.smirks`) |
-
----
 
 ## 📄 Output ARFF Structure
 
