@@ -18,21 +18,6 @@
 
 **ARFFify** is a Streamlit based tool to convert CSV file to `.arff` file ready for machine-learning workflows in **Weka**.
 
-
----
-
-## ⚙️ How It Works
-
-<table>
-<tr>
-<td align="center"><b>📂</b><br/><sub>STEP 1</sub><br/><b>Upload CSV</b><br/><sub>Drop your bioactivity file<br/>with ID, SMILES & Class</sub></td>
-<td align="center"><b>🏷️</b><br/><sub>STEP 2</sub><br/><b>Name Relation</b><br/><sub>Set the <code>@relation</code><br/>tag for your ARFF</sub></td>
-<td align="center"><b>🔬</b><br/><sub>STEP 3</sub><br/><b>PaDEL Settings</b><br/><sub>Toggle salt removal,<br/>aromaticity & tautomers</sub></td>
-<td align="center"><b>🗂️</b><br/><sub>STEP 4</sub><br/><b>Class Labels</b><br/><sub>Map 1/0 → active/inactive<br/>or keep originals</sub></td>
-<td align="center"><b>⬇️</b><br/><sub>OUTPUT</sub><br/><b>Download ARFF</b><br/><sub>One-click download of<br/>your Weka-ready file</sub></td>
-</tr>
-</table>
-
 ---
 
 ## 🚀 Installation
@@ -57,40 +42,6 @@ streamlit run ARFFify.py
 The app will open in your browser at `http://localhost:8501`.
 
 ---
-
-
-
-## 📄 Output ARFF Structure
-
-The generated file follows the standard Weka ARFF format like this:
-
-```
-@relation CDK5_pubchem
-
-@attribute PubchemFP0 numeric
-@attribute PubchemFP1 numeric
-...
-@attribute PubchemFP880 numeric
-@attribute class {active, inactive}
-
-@data
-0,1,0,1,...,active
-1,0,1,0,...,inactive
-```
-
-> ✅ **881 PubChem fingerprint bits** are extracted per molecule and written as numeric attributes.
-
----
-
-## ⚠️ Notes & Limitations
-
-> ⚠️ If PaDEL fails to process a molecule (e.g. invalid SMILES), it is silently skipped. The app will warn you if the output row count differs from the input and will match by order.
-
-- Processing time scales with the number of compounds — large datasets (1 000+) may take several minutes.
-- Java must be installed and accessible on your system `PATH` for PaDEL to run.
-- The `@relation` name must not contain spaces (use underscores instead).
-- Class label mapping (`1→active`, `0→inactive`) only works for binary integer labels.
-
 
 <div align="center">
   <img src="assets/footer.png" alt="ARFFify Footer" width="100%" />
